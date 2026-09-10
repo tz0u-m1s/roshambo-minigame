@@ -12,7 +12,7 @@ The computer randomly chooses its move using Python's `random` module. The game 
 
 Features:
 
-* Player vs. computer gameplay
+* Player vs. computer or 2 player gameplay 
 * Random computer choices using `randint()`
 * Input validation
 * Handles invalid inputs such as letters, decimals, and numbers outside 1–3
@@ -21,10 +21,8 @@ Features:
 
 How to Start:
 
-Run the Python file and type **Y** when asked if you want to start playing.
-Then choose **1, 2, or 3** for Rock, Paper, or Scissors.
-
-Multiplayer coming soon!
+Run the Python file(in Terminal, write this: python rock_paper_scissors.py) and type **Y** when asked if you want to start playing.
+Then choose **1, 2, or 3** for Rock, Paper, or Scissors
 
 
   

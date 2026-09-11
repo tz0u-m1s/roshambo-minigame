@@ -1,3 +1,4 @@
+from time import sleep
 from random import randint
 while True:
     game_start=input("Start Playing Rock Paper Scissors? Y/N ")
@@ -49,15 +50,15 @@ while True:
                     if RPS_player_pick==RPS_AI_pick:
                         print("Tie!")
                     elif RPS_player_pick==1 and RPS_AI_pick==3:
-                        print("Player Wins!")
+                        print("You Win!")
                     elif RPS_player_pick==1 and RPS_AI_pick==2:
                         print("AI Wins!")
                     elif RPS_player_pick==2 and RPS_AI_pick==1:
-                        print("Player Wins!")
+                        print("You Win!")
                     elif RPS_player_pick==2 and RPS_AI_pick==3:
                         print("AI Wins!")
                     elif RPS_player_pick==3 and RPS_AI_pick==2:
-                        print("Player Wins!")
+                        print("You Win!")
                     elif RPS_player_pick==3 and RPS_AI_pick==1:
                         print("AI Wins!")
 
@@ -79,12 +80,15 @@ while True:
 
                 if RPS_player_pick==1:
                     print("P1:Rock")
+                    sleep(2)
 
                 elif RPS_player_pick==2:
                     print("P1:Paper")
+                    sleep(2)
 
                 elif RPS_player_pick==3:
                     print("P1:Scissors")
+                    sleep(2)
 
                 elif RPS_player_pick<1 or RPS_player_pick>3:
                     print("Try again!")
@@ -103,31 +107,36 @@ while True:
 
                     if RPS_player2_pick==1:
                         print("P2:Rock")
+                        sleep(2)
 
                     elif RPS_player2_pick==2:
                         print("P2:Paper")
+                        sleep(2)
 
                     elif RPS_player2_pick==3:
                         print("P2:Scissors")
+                        sleep(2)
 
                     elif RPS_player2_pick<1 or RPS_player2_pick>3:
                         print("Try again!")
                         continue
                     print("\n"*15)
+                    print("The results are in! ")
+                    sleep(1)
                     if RPS_player_pick==RPS_player2_pick:
-                        print("Tie!")
+                        print("Its a Tie!")
                     elif RPS_player_pick==1 and RPS_player2_pick==3:
-                        print("Rock VS Scissors, Player1 Wins!")
+                        print("Rock VS Scissors, Player 1 Wins!")
                     elif RPS_player_pick==1 and RPS_player2_pick==2:
-                        print("Rock VS Paper, Player2 Wins!")
+                        print("Rock VS Paper, Player 2 Wins!")
                     elif RPS_player_pick==2 and RPS_player2_pick==1:
-                        print("Paper VS Rock, Player1 Wins!")
+                        print("Paper VS Rock, Player 1 Wins!")
                     elif RPS_player_pick==2 and RPS_player2_pick==3:
-                        print("Paper VS Scissors, Player2 Wins!")
+                        print("Paper VS Scissors, Player 2 Wins!")
                     elif RPS_player_pick==3 and RPS_player2_pick==2:
-                        print("Scissors VS Paper, Player1 Wins!")
+                        print("Scissors VS Paper, Player 1 Wins!")
                     elif RPS_player_pick==3 and RPS_player2_pick==1:
-                        print("Scissors VS Rock, Player2 Wins!")
+                        print("Scissors VS Rock, Player 2 Wins!")
 
 
             
